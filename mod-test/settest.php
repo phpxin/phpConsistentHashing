@@ -1,7 +1,7 @@
 <?php
-require_once "RedisCache.class.php" ;
+require_once "ModCache.class.php" ;
 
-$cacheObj = new RedisCache();
+$cacheObj = new ModCache();
 
 
 //$cacheObj->set("name", "lixin");
@@ -24,7 +24,3 @@ foreach($rows as $_row){
 }
 $end = microtime(true);
 echo 'insert time ' . (strval($end-$start)) , PHP_EOL ;
-$cacheObj->info();
-
-
-
